@@ -1467,7 +1467,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AuthService = /** @class */ (function () {
     function AuthService(http) {
         this.http = http;
-        this.url = 'https://blog-tai-kc.herokuapp.com';
+        this.url = 'https://blog-tai-kc.herokuapp.com/api';
     }
     AuthService.prototype.authenticate = function (credentials) {
         return this.http.post(this.url + '/user/auth', {
@@ -1596,7 +1596,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var DataService = /** @class */ (function () {
     function DataService(http) {
         this.http = http;
-        this.url = 'http://localhost:3000';
+        this.url = 'https://blog-tai-kc.herokuapp.com';
     }
     DataService.prototype.getAll = function () {
         return this.http.get(this.url + '/api/posts/');

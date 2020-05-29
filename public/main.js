@@ -1167,6 +1167,7 @@ var SignupComponent = /** @class */ (function () {
         this.authService.createOrUpdate(this.credentials).subscribe(function (result) {
             return result;
         });
+        this.router.navigate(['/']);
     };
     SignupComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
